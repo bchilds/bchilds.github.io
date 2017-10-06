@@ -1,5 +1,24 @@
 body {
-	font-size: 18px;
+	font-size: 22px;
+}
+
+/*	=== Nav Bar ===	*/
+.nav-bar {
+
+}
+
+#app-nav {
+
+}
+
+
+/*  === About === */
+#about-pic {
+	width: 15%;
+}
+
+#about-nav {
+	
 }
 
 .construction {
@@ -8,14 +27,23 @@ body {
 	height:20%;
 	margin-top: 10%;
 	text-align: center;
-
 }
 
 .logo {
 	width: 200px;
 }
 
+.logo-external {
+	margin: auto;
+	width: 200px;
+}
+
+#experience-section img {
+	border: 1px solid black;
+}
+
 #construction-text {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.4em;
 }
+

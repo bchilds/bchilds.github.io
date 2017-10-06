@@ -4,12 +4,11 @@ class About extends React.Component {
 	constructor(props){
 		super(props)
 		this.state = {
-			//lets user select a section: bio, hobbies, projects
+			//lets user select a section: bio, hobbies
 			selected: 'bio',
 		}
 		this.setBio = this.setBio.bind(this)
 		this.setHobbies = this.setHobbies.bind(this)
-		this.setProjects = this.setProjects.bind(this)
 	}
 
 	setBio() {
@@ -18,10 +17,6 @@ class About extends React.Component {
 
 	setHobbies() {
 		this.setState({selected: 'hobbies'})
-	}
-
-	setProjects() {
-		this.setState({selected: 'projects'})
 	}
 
 	bioSection() {
@@ -38,49 +33,20 @@ class About extends React.Component {
 
 	hobbiesSection() {
 		return(
-			<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida neque 
-			nec turpis maximus lobortis. Cras massa turpis, sagittis eget odio sit amet, 
-			faucibus bibendum nisl. Praesent quis nulla nisi. Maecenas odio felis, tempus 
-			eu odio quis, interdum porttitor leo. Morbi eleifend quis est quis bibendum. 
-			Aliquam at augue sodales, sollicitudin lectus at, mollis dolor. Nunc efficitur 
-			a neque id tempor. Nam ac arcu augue. Phasellus sodales ullamcorper lorem nec 
-			dignissim. Suspendisse pretium, sem ac commodo eleifend, nisl sapien pretium 
-			leo, id tincidunt velit est eget justo. Phasellus vestibulum, odio eget auctor 
-			elementum, mi ipsum semper mauris, a tincidunt diam ex vitae urna. 
-			</p>
-		)
-	}
-
-	projectsSection() {
-		return(
-			<div>
-				<div className="project">
-					<p>
-					Integer vel auctor nunc. Aliquam nec eros non augue efficitur tristique. 
-					Duis malesuada vitae libero vitae malesuada. Aliquam erat volutpat. Sed 
-					malesuada sem imperdiet mi suscipit mattis. 
-					</p>
-					<img src="#"/>
-				</div>
-				<div className="project">
-					<p>
-					Aenean id mauris egestas, 
-					imperdiet velit et, scelerisque orci. Mauris porta odio purus, sit amet 
-					auctor odio malesuada at. Quisque luctus enim at feugiat imperdiet. Nulla 
-					eget molestie nisi. Morbi ut ligula dignissim, aliquam est non, bibendum 
-					augue. 
-					</p>
-					<img src="#"/>
-				</div>
-				<div className="project">
-					<p>
-					Donec imperdiet viverra arcu, eu fringilla tortor dignissim id. 
-					Proin luctus tellus lectus, in sollicitudin ante maximus interdum. Aliquam 
-					ligula tellus, faucibus at leo vitae, tincidunt porta libero.
-					</p>
-					<img src="#"/>
-				</div>
+			<div id="hobbies-section">
+				<p>
+				I am an active person with a diverse array of hobbies and interests. Twice a week 
+				I go bouldering at a local bouldering gym. I am a game master for two D&D campaigns 
+				and love to build complex puzzles and unique dungeons. I am currently in the top 50 
+				players of Shellshock Live, an online tank game played by upwards of 45,000 people. 
+				I have a passion for target-based sports like bowling, archery, throwing knives and darts.
+				</p>
+				<p>
+				Becoming sedentary is a fate I do my best to avoid. From drawing to powerlifting to board games to 
+				fantastical sci-fi books, very rarely do I just sit on the couch and passively watch television. 
+				I do my best to stay active and engaged, stay up to date with current events, news and politics, 
+				and always keep learning and growing with the world around me. 
+				</p>
 			</div>
 		)
 	}
@@ -93,21 +59,21 @@ class About extends React.Component {
 			case 'hobbies':
 				return this.hobbiesSection()
 				break
-			case 'projects':
-				return this.projectsSection()
-				break
 		}
 	}
 
 	render() {
 		return (
-			<div id="aboutSection">
-				<div id="aboutNav">
+			<div>
+				<h2>About Me</h2>
+				<div id="about-nav">
 					<button onClick={this.setBio}>Bio</button>
 					<button onClick={this.setHobbies}>Hobbies</button>
-					<button onClick={this.setProjects}>Projects</button>
 				</div>
-				{this.renderSection()}
+				<div id="about-container">
+					{this.renderSection()}
+					<img src="https://s3.amazonaws.com/personal-github-page/Formal.jpg" className="bio-pic" id="about-pic" alt="Ben Childs portrait"/>
+				</div>
 			</div>
 		)
 	}
