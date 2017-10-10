@@ -21,19 +21,21 @@ class About extends React.Component {
 
 	bioSection() {
 		return(
-			<p>I am a full stack software engineer with a love for problem solving and clean, 
-			concise design. Several years of experience working with tech startups in Austin 
-			has given me exposure to a full spectrum of applications and technologies, from 
-			mobile applications to enterprise software. With a focus on normalized databases 
-			and logical server design, I love spending time to make sure my code is as optimized
-			as possible and always strive to produce my best work.
-			</p>
+			<div className="about-section">
+				<p>I am a full stack software engineer with a love for problem solving and clean, 
+				concise design. Several years of experience working with tech startups in Austin 
+				has given me exposure to a full spectrum of applications and technologies, from 
+				mobile applications to enterprise software. With a focus on normalized databases 
+				and logical server design, I love spending time to make sure my code is as optimized
+				as possible and always strive to produce my best work.
+				</p>
+			</div>
 		)
 	}
 
 	hobbiesSection() {
 		return(
-			<div id="hobbies-section">
+			<div className="about-section" id="hobbies-section">
 				<p>
 				I am an active person with a diverse array of hobbies and interests. Twice a week 
 				I go bouldering at a local bouldering gym. I am a game master for two D&D campaigns 
@@ -62,16 +64,27 @@ class About extends React.Component {
 		}
 	}
 
+				// <div id="about-nav">
+				// 	<button onClick={this.setBio}>Bio</button>
+				// 	<button onClick={this.setHobbies}>Hobbies</button>
+				// </div>
+				// <div id="about-content">
+				// 	{this.renderSection()}
+				// 	<img src="https://s3.amazonaws.com/personal-github-page/Formal.jpg" className="bio-pic" id="about-pic" alt="Ben Childs portrait"/>
+				// </div>
+
 	render() {
 		return (
-			<div>
-				<h2>About Me</h2>
-				<div id="about-nav">
-					<button onClick={this.setBio}>Bio</button>
-					<button onClick={this.setHobbies}>Hobbies</button>
-				</div>
-				<div id="about-container">
+			<div id="about-container">
+				<h2 className="sub-header">About Me</h2>
+				<div id="about-content">
+					<div id="about-inner">
+					<div id="about-nav">
+						<button onClick={this.setBio}>Bio</button>
+						<button onClick={this.setHobbies}>Hobbies</button>
+					</div>
 					{this.renderSection()}
+					</div>
 					<img src="https://s3.amazonaws.com/personal-github-page/Formal.jpg" className="bio-pic" id="about-pic" alt="Ben Childs portrait"/>
 				</div>
 			</div>

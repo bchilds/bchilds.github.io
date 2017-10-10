@@ -6,7 +6,7 @@ const Education = () => {
 	//The sections below provide information about my relevant education.
 	return (
 		<div id="education-container">
-			<h2>Education</h2>
+			<h2 className="sub-header">Education</h2>
 			<div id="vanderbilt">
 			<p>I have a Bachelors of Engineering with a major in Biomedical Engineering and a minor in Psychology. 
 			With a focus on imaging device design, I used MATLab and NI's LabView to do research in Dr. Bruce Damon's imaging lab 
