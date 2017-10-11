@@ -6,6 +6,7 @@ class About extends React.Component {
 		this.state = {
 			//lets user select a section: bio, hobbies
 			selected: 'bio',
+			dark: true,
 		}
 		this.setBio = this.setBio.bind(this)
 		this.setHobbies = this.setHobbies.bind(this)
@@ -64,15 +65,6 @@ class About extends React.Component {
 		}
 	}
 
-				// <div id="about-nav">
-				// 	<button onClick={this.setBio}>Bio</button>
-				// 	<button onClick={this.setHobbies}>Hobbies</button>
-				// </div>
-				// <div id="about-content">
-				// 	{this.renderSection()}
-				// 	<img src="https://s3.amazonaws.com/personal-github-page/Formal.jpg" className="bio-pic" id="about-pic" alt="Ben Childs portrait"/>
-				// </div>
-
 	render() {
 		return (
 			<div id="about-container">
@@ -80,8 +72,8 @@ class About extends React.Component {
 				<div id="about-content">
 					<div id="about-inner">
 					<div id="about-nav">
-						<button onClick={this.setBio}>Bio</button>
-						<button onClick={this.setHobbies}>Hobbies</button>
+						<button className={(this.state.selected === 'bio' ? 'about-dark' : '')} onClick={this.setBio}>Bio</button>
+						<button className={(this.state.selected === 'hobbies' ? 'about-dark' : '')} onClick={this.setHobbies}>Hobbies</button>
 					</div>
 					{this.renderSection()}
 					</div>

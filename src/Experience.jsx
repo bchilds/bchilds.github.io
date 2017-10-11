@@ -94,7 +94,7 @@ class Experience extends React.Component {
 								<li>Deployed application to Amazon Web Services (AWS) EC2 instance</li>
 							</ul>
 							<a href="http://www.myrentopia.com" target="_blank">
-								<img class="logo" src="https://s3.amazonaws.com/personal-github-page/Rentopia_Logo.png" alt="Rentopia"/>
+								<img className="logo" src="https://s3.amazonaws.com/personal-github-page/Rentopia_Logo.png" alt="Rentopia"/>
 							</a>
 						</div>
 						<div className="project">
@@ -107,7 +107,7 @@ class Experience extends React.Component {
 								<li>Deployed application on DigitalOcean</li>
 							</ul>
 							<a href="http://www.concreet.date" target="_blank">
-								<img class="logo" src="https://s3.amazonaws.com/personal-github-page/Concreet_Logo.png" alt="Concreet Calendar"/>
+								<img className="logo" src="https://s3.amazonaws.com/personal-github-page/Concreet_Logo.png" alt="Concreet Calendar"/>
 							</a>
 						</div>
 					</div>

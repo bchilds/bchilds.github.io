@@ -35,7 +35,7 @@ button:hover {
 	width: 100%;
 	height:92%;
 	overflow-y: scroll;
-	padding-bottom: 25px;
+	padding-bottom: 50px;
 }
 
 .sub-header {
@@ -106,7 +106,6 @@ button:hover {
 
 #about-nav {
 	display: flex;
-	/*align-items: center;*/
 	text-align: center;
 	margin-top: 10px;
 	margin-left: 0;
@@ -116,9 +115,16 @@ button:hover {
 #about-nav button {
 	width: 125px;
 	height: 50px;
+	color: #FFF;
+	background: #03A9F4;
 	border-style: none;
 	font-size: 100%;
 	text-align: center;
+	border-radius: 8px;
+}
+
+#about-nav button.about-dark {
+	background: #0288D1;
 }
 
 #about-inner {
@@ -137,7 +143,7 @@ button:hover {
 
 #about-content {
 	display: flex;
-	align-items: center;
+	align-items: start;
 	width: 90%;
 	position: relative;
 	left: 5%;
@@ -146,6 +152,12 @@ button:hover {
 .about-section {
 	width: 70%;
 	height: 70%;
+}
+
+
+/* === Education === */
+#hackreactor-logo {
+	padding-bottom: 50px;
 }
 
 .construction {
