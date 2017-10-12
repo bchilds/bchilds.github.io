@@ -29,7 +29,7 @@ const config = {
       recordsPath: 'node_modules/.cache/hard-source/[confighash]/records.json',
       configHash: require('node-object-hash')({sort: false}).hash,
     }),
-    // new UglifyJSPlugin()
+    new UglifyJSPlugin()
   ]
 }
 
