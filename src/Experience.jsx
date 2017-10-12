@@ -81,36 +81,36 @@ class Experience extends React.Component {
 					</Modal>
 				</div>
 				<h2 className="sub-header">Projects</h2>
+				<div id="projects-background">
 				<div id="projects-section">
-					<div>
-						<div className="project">
-							<h3>Rentopia</h3>
-							<a href="http://www.myrentopia.com" target="_blank">www.myrentopia.com</a>
-							<p>Manage properties and tenants as a landlord, or pay rent and share bills with housemates as a tenant.</p>
-							<ul>
-								<li>Architected Node.js/KOA server with PostgreSQL database</li>
-								<li>Integrated multi-factor authentication with Google Authenticator</li>
-								<li>Designed interactive property map using Google Maps API</li>
-								<li>Deployed application to Amazon Web Services (AWS) EC2 instance</li>
-							</ul>
-							<a href="http://www.myrentopia.com" target="_blank">
-								<img className="logo" src="https://s3.amazonaws.com/personal-github-page/Rentopia_Logo.png" alt="Rentopia"/>
-							</a>
-						</div>
-						<div className="project">
-							<h3>Concreet Calendar</h3>
-							<a href="http://www.concreet.date" target="_blank">www.concreet.date</a>
-							<p>Authentication with Google allows for meeting scheduling during only empty time slots.</p>
-							<ul>
-								<li>Architected server and database using Node.js/Express and MongoDB/Mongoose</li>
-								<li>Integrated OAuth login with Google account using Node.js, Express and Passport</li>
-								<li>Deployed application on DigitalOcean</li>
-							</ul>
-							<a href="http://www.concreet.date" target="_blank">
-								<img className="logo" src="https://s3.amazonaws.com/personal-github-page/Concreet_Logo.png" alt="Concreet Calendar"/>
-							</a>
-						</div>
+					<div className="project">
+						<h3>Rentopia</h3>
+						<a href="http://www.myrentopia.com" target="_blank">www.myrentopia.com</a>
+						<p>Manage properties and tenants as a landlord, or pay rent and share bills with housemates as a tenant.</p>
+						<ul>
+							<li>Architected Node.js/KOA server with PostgreSQL database</li>
+							<li>Integrated multi-factor authentication with Google Authenticator</li>
+							<li>Designed interactive property map using Google Maps API</li>
+							<li>Deployed application to Amazon Web Services (AWS) EC2 instance</li>
+						</ul>
+						<a href="http://www.myrentopia.com" target="_blank">
+							<img className="logo" src="https://s3.amazonaws.com/personal-github-page/Rentopia_Logo.png" alt="Rentopia"/>
+						</a>
 					</div>
+					<div className="project">
+						<h3>Concreet Calendar</h3>
+						<a href="http://www.concreet.date" target="_blank">www.concreet.date</a>
+						<p>Authentication with Google allows for meeting scheduling during only empty time slots.</p>
+						<ul>
+							<li>Architected server and database using Node.js/Express and MongoDB/Mongoose</li>
+							<li>Integrated OAuth login with Google account using Node.js, Express and Passport</li>
+							<li>Deployed application on DigitalOcean</li>
+						</ul>
+						<a href="http://www.concreet.date" target="_blank">
+							<img className="logo" src="https://s3.amazonaws.com/personal-github-page/Concreet_Logo.png" alt="Concreet Calendar"/>
+						</a>
+					</div>
+				</div>
 				</div>
 			</div>
 		)

@@ -270,11 +270,54 @@ button:hover {
 	width: 200px;
 }
 
-#projects-section{
-	display: flex;
-	align-content: center;
+/* === Projects === */
+
+#projects-background {
+	background: #eee;
+	padding-bottom: 35px;
 }
 
+#projects-section {
+	display: flex;
+	align-content: center;
+	width: 85%;
+	margin: auto;
+}
+
+.project {
+	margin: 5px 15px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.project > p {
+	text-align: center;
+	margin: 15px 0;
+}
+
+.project:first-of-type { 
+	margin-left: auto;
+}
+
+.project:last-of-type { 
+	margin-right: auto;
+}
+
+.project ul {
+	margin: auto;
+}
+
+.project ul li {
+	font-size: 80%;
+	margin: 10px auto;
+}
+
+.project a img.logo {
+	margin-top: 10px;
+	max-height: 150px;
+	max-width: 200px;
+}
 
 /* === Contact === */
 

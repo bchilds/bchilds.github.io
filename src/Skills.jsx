@@ -51,7 +51,7 @@ const Skills = () => {
 					<h3>Soft Skills</h3>
 					<ul>
 						<li>Project Management</li>
-						<li>JIRA scrum</li>
+						<li>JIRA</li>
 					</ul>
 				</div>
 			</div>
