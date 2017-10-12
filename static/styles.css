@@ -34,7 +34,7 @@ button:hover {
 	top: 8%;
 	width: 100%;
 	height:92%;
-	overflow-y: scroll;
+	overflow-y: auto;
 	padding-bottom: 50px;
 }
 
@@ -91,9 +91,17 @@ button:hover {
 
 #welcome-content {
 	position: relative;
-	top: -15%;
+	top: -18%;
 	width: 100%;
 	text-align: center;
+}
+
+#welcome-content hr {
+	width: 15%;
+}
+
+#welcome-content h5 {
+	color: #757575;
 }
 
 /*  === About === */
@@ -156,20 +164,98 @@ button:hover {
 
 
 /* === Education === */
-#hackreactor-logo {
-	padding-bottom: 50px;
+#edu-container h2 {
+	margin-bottom: 3%;
 }
 
-.construction {
+#edu-content > :last-child {
+	/*padding-bottom: 50px;*/
+}
+
+#edu-container {
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+}
+
+#edu-content {
+	width: 80%;
 	margin: auto;
-	width: 50%;
-	height:20%;
-	margin-top: 10%;
-	text-align: center;
+	align-self: center;
 }
 
-.logo {
-	width: 200px;
+#edu-content .edu-item {
+	display: flex;
+	align-items: left;
+}
+
+#edu-content .edu-item a{
+	margin: auto;
+	margin-left: 15px;
+}
+
+/* === Skills === */
+
+#skills-container {
+}
+
+#skills-content {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#skills-content > .skillset {
+	display: inline-block;
+}
+
+.skillset > h3 {
+	display: block;
+	float: left;
+}
+
+#skills-content ul {
+	align-self: center;
+	list-style: none;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#skills-content ul li{
+ width:  100%;
+ transition: all 0.4s ease;
+ display: inline-block;
+ padding: 5px 0;
+ color: #666;
+ background:  #B3E5FC;
+ text-align: center;
+ font-size: 75%
+}
+
+#skills-content ul li:hover {
+	background: #0288D1;
+	color: #FFF;
+}
+
+/* === Experience === */
+
+#experience-section {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin: auto;
+}
+
+#experience-section img {
+	margin: 5% auto;
+	padding: 0 2%;
+	max-width: 15%;
+}
+
+#experience-section img:hover {
+	cursor: pointer;
 }
 
 .logo-external {
@@ -177,12 +263,27 @@ button:hover {
 	width: 200px;
 }
 
-#experience-section img {
-	border: 1px solid black;
+#projects-section{
+	display: flex;
+	align-content: center;
 }
 
-#construction-text {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.4em;
+
+/* === Contact === */
+
+#contact-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
+
+#contact-container ul {
+	list-style: none;
+	margin-top: 8%;
+}
+
+
+
+
+
 

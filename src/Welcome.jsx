@@ -6,7 +6,8 @@ const Welcome = () => {
 		<div id="welcome">
 			<div id="welcome-content">
 				<h2>Benjamin T. Childs</h2>
-				<p>Welcome!</p>
+				<hr/>
+				<h5><i>Oculi animum apertum aperti</i></h5>
 			</div>
 		</div>
 	)

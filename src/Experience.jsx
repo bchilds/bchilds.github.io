@@ -70,8 +70,8 @@ class Experience extends React.Component {
 	render(){
 		return (
 			<div>
+				<h2 className="sub-header">Experience</h2>
 				<div id="experience-section">
-					<h2 className="sub-header">Experience</h2>
 					<img id="endao-exp" className="logo" src="https://www.patherp.com/wp-content/uploads/PATHerp-Logo-Final.png" alt="Endao Logo" onClick={this.toggleModal}/>
 					<img id="vuiis-exp" className="logo" src="http://www.vuiis.vanderbilt.edu/~newtonat/Allen_Newton/VUIIS_General_Scheduling_files/VUIISlogoForLaptop.png" alt="Vanderbilt University Institute of Imaging Science Logo" onClick={this.toggleModal}/>
 					<br/>
@@ -80,8 +80,8 @@ class Experience extends React.Component {
 						{this.modalContent()}
 					</Modal>
 				</div>
+				<h2 className="sub-header">Projects</h2>
 				<div id="projects-section">
-					<h2 className="sub-header">Projects</h2>
 					<div>
 						<div className="project">
 							<h3>Rentopia</h3>
