@@ -26,7 +26,7 @@ class Experience extends React.Component {
 		if(this.state.selectedContent === 'endao-exp'){
 			return(
 				<div className="modal-content">
-					<h2>Endao</h2>
+					<h2>Endao PATH</h2>
 					<ul className="modal-list">
 						<h3>Responsibilities</h3>
 						<li>Managed application design and feature development for multiple legacy clients</li>
@@ -73,9 +73,9 @@ class Experience extends React.Component {
 				<h2 className="sub-header">Experience</h2>
 				<div id="experience-section">
 					<img id="endao-exp" className="logo" src="https://www.patherp.com/wp-content/uploads/PATHerp-Logo-Final.png" alt="Endao Logo" onClick={this.toggleModal}/>
+					<img id="carestarter-exp" className="logo" src="http://42fb55ddca2de660bb78-f8222489624d5fd05bf955868005c797.r75.cf2.rackcdn.com/d4eea2fec0894a649e38b773fae6a185.jpg" alt="CareStarter Logo" onClick={this.toggleModal}/>
 					<img id="vuiis-exp" className="logo" src="http://www.vuiis.vanderbilt.edu/~newtonat/Allen_Newton/VUIIS_General_Scheduling_files/VUIISlogoForLaptop.png" alt="Vanderbilt University Institute of Imaging Science Logo" onClick={this.toggleModal}/>
 					<br/>
-					<img id="carestarter-exp" className="logo" src="http://42fb55ddca2de660bb78-f8222489624d5fd05bf955868005c797.r75.cf2.rackcdn.com/d4eea2fec0894a649e38b773fae6a185.jpg" alt="CareStarter Logo" onClick={this.toggleModal}/>
 					<Modal show={this.state.openModal} onClose={this.toggleModal}>
 						{this.modalContent()}
 					</Modal>

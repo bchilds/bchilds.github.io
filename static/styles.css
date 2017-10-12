@@ -202,25 +202,32 @@ button:hover {
 #skills-content {
 	width: 90%;
 	margin: 0 auto;
+	margin-top: 15px;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
-#skills-content > .skillset {
+#skills-content .skillset {
 	display: inline-block;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 20px;
 }
 
 .skillset > h3 {
 	display: block;
-	float: left;
+	margin: auto;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #BDBDBD;
 }
 
 #skills-content ul {
 	align-self: center;
 	list-style: none;
 	margin: 0 auto;
-	width: 100%;
+	padding-left: 0;
+	width: 80%;
 }
 
 #skills-content ul li{
@@ -231,7 +238,7 @@ button:hover {
  color: #666;
  background:  #B3E5FC;
  text-align: center;
- font-size: 75%
+ font-size: 90%
 }
 
 #skills-content ul li:hover {
