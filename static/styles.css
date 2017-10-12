@@ -7,8 +7,11 @@
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
-
 */
+
+* {
+	font-family: 'Titillium Web', sans-serif;
+}
 
 body {
 	font-size: 1.5em;
@@ -25,7 +28,6 @@ button:focus {
 button:hover {
 	cursor: pointer;
 }
-
 
 /*	=== General Content ===	*/
 
@@ -47,8 +49,21 @@ button:hover {
 	margin: auto;
 }
 
+/* === Modal === */
+.modal-close {
+	position: fixed;
+	top: 8%;
+	right: 11%;
+	font-size: 100%;
+	color: #0288D1;
+	border-style: none;
+	background: none;
+}
+
 /*	=== Nav Bar ===	*/
 #app-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: fixed;
 	top: 0px;
@@ -56,7 +71,11 @@ button:hover {
 	background: #0288D1;
 	width: 100%;
 	height: 8%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
@@ -81,7 +100,11 @@ button:hover {
 
 /*  === Welcome === */
 #welcome {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	width: 100%;
 	height: 100%;
@@ -107,12 +130,15 @@ button:hover {
 /*  === About === */
 #about-pic {
 	width: 30%;
+  -ms-flex-item-align: start;
   align-self: start;
   position: relative;
   top: 10px;
 }
 
 #about-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	text-align: center;
 	margin-top: 10px;
@@ -136,8 +162,15 @@ button:hover {
 }
 
 #about-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -150,7 +183,11 @@ button:hover {
 }
 
 #about-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
 	align-items: start;
 	width: 90%;
 	position: relative;
@@ -173,19 +210,31 @@ button:hover {
 }
 
 #edu-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
 	align-items: start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
 #edu-content {
 	width: 80%;
 	margin: auto;
+	-ms-flex-item-align: center;
 	align-self: center;
 }
 
 #edu-content .edu-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: left;
+	-ms-flex-align: left;
 	align-items: left;
 }
 
@@ -203,8 +252,13 @@ button:hover {
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -223,6 +277,7 @@ button:hover {
 }
 
 #skills-content ul {
+	-ms-flex-item-align: center;
 	align-self: center;
 	list-style: none;
 	margin: 0 auto;
@@ -232,6 +287,7 @@ button:hover {
 
 #skills-content ul li{
  width:  100%;
+ -webkit-transition: all 0.4s ease;
  transition: all 0.4s ease;
  display: inline-block;
  padding: 5px 0;
@@ -249,8 +305,15 @@ button:hover {
 /* === Experience === */
 
 #experience-section {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
 	margin: auto;
 }
@@ -278,7 +341,10 @@ button:hover {
 }
 
 #projects-section {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-line-pack: center;
 	align-content: center;
 	width: 85%;
 	margin: auto;
@@ -286,8 +352,15 @@ button:hover {
 
 .project {
 	margin: 5px 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
@@ -322,8 +395,15 @@ button:hover {
 /* === Contact === */
 
 #contact-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
