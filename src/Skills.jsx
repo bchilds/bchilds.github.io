@@ -28,7 +28,6 @@ const Skills = () => {
 						<li>React.js</li>
 						<li>AngularJS</li>
 						<li>Jest</li>
-						<li>AngularJS</li>
 						<li>Passport</li>
 					</ul>
 				</div>
