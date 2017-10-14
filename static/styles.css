@@ -14,7 +14,7 @@
 }
 
 body {
-	font-size: 1.5em;
+	font-size: 1em;
 	background: #FFFDF9;
 	margin: auto;
 	height: 100%;
@@ -27,6 +27,12 @@ button:focus {
 
 button:hover {
 	cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		font-size: 1.5em;
+	}
 }
 
 /*	=== General Content ===	*/
@@ -79,7 +85,7 @@ button:hover {
 
 #app-nav button {
   height:100%;
-  font-size: 115%;
+  font-size: small;
   color: #FFF;
   text-align: center;
   background-color: rgba(0,0,0,0);
@@ -88,11 +94,26 @@ button:hover {
   padding: 0 4%;
 }
 
+
+
 #app-nav button:hover {
 	background-color: rgba(1,1,1,0.2);
 	color: rgba(255,255,255,0.9);
 	padding-top: 4px; 
 	border-bottom: 4px solid #BDBDBD;
+}
+
+@media only screen and (min-width: 768px) {
+	#app-nav button {
+	  height:100%;
+	  font-size: large;
+	  color: #FFF;
+	  text-align: center;
+	  background-color: rgba(0,0,0,0);
+	  border-style: none;
+	  margin: 0;
+	  padding: 0 4%;
+	}
 }
 
 
@@ -127,11 +148,10 @@ button:hover {
 
 /*  === About === */
 #about-pic {
-	width: 30%;
-  -ms-flex-item-align: start;
-  align-self: start;
+	width: 60%;
+  -ms-flex-item-align: center;
+  align-self: center;
   position: relative;
-  top: 10px;
 }
 
 #about-nav {
@@ -184,17 +204,44 @@ button:hover {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
-	align-items: start;
-	width: 90%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 95%;
 	position: relative;
-	left: 5%;
+	left: 0%;
+	flex-direction: column;
+	margin: auto;
 }
 
 .about-section {
-	width: 70%;
-	height: 70%;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	#about-content {
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: start;
+		width: 90%;
+		position: relative;
+		left: 5%;
+		flex-direction: row;
+	}
+
+	.about-section {
+		width: 70%;
+		height: 70%;
+		text-align: left;
+	}
+
+	#about-pic {
+		width: 30%;
+	  -ms-flex-item-align: start;
+	  align-self: start;
+	  position: relative;
+	  top: 10px;
+	}
 }
 
 
@@ -228,17 +275,42 @@ button:hover {
 }
 
 #edu-content .edu-item {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: left;
-	-ms-flex-align: left;
-	align-items: left;
-}
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+}	
 
 #edu-content .edu-item a{
-	margin: auto;
-	margin-left: 15px;
+	margin: none;
+	align-self: center;
+}
+
+@media only screen and (min-width: 768px) {
+	#edu-content .edu-item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: left;
+		-ms-flex-align: left;
+		align-items: left;
+		flex-direction: row;
+	}
+
+	#edu-content .edu-item {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+	}	
+
+	#edu-content .edu-item a{
+		margin: auto;
+		margin-left: 15px;
+	}
+
 }
 
 /* === Skills === */
@@ -344,8 +416,15 @@ button:hover {
 	display: flex;
 	-ms-flex-line-pack: center;
 	align-content: center;
-	width: 85%;
-	margin: auto;
+	width: 100%;
+	margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	#projects-section {
+		width: 85%;
+		margin: auto;
+	}
 }
 
 .project {
